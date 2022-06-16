@@ -270,7 +270,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1571873486409940420}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0.99691737, z: -0, w: -0.07845902}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -282,7 +282,7 @@ Transform:
   - {fileID: 1571873486410228204}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 189, z: 0}
 --- !u!82 &-4641584942059362588
 AudioSource:
   m_ObjectHideFlags: 0
@@ -392,7 +392,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   WeaponName: pistol
-  WeaponIcon: {fileID: 0}
+  WeaponIcon: {fileID: 21300000, guid: 3c187e19c32c13542ba8a0c1a3a88ece, type: 3}
   CrosshairDataDefault:
     CrosshairSprite: {fileID: 21300000, guid: 2b5b80f3ebc88174a8c662e280fdb09c, type: 3}
     CrosshairSize: 45
@@ -402,7 +402,8 @@ MonoBehaviour:
     CrosshairSize: 0
     CrosshairColor: {r: 0, g: 0, b: 0, a: 0}
   WeaponRoot: {fileID: 1571873486409940420}
-  WeaponMuzzle: {fileID: 0}
+  WeaponMuzzle: {fileID: 1191051625046309077, guid: 0f1125a9f34f81743bcea642342afd49,
+    type: 3}
   ShootType: 0
   ProjectilePrefab: {fileID: 5542020336735652036, guid: 0e23901b938cf4f4eb86850d912715eb,
     type: 3}
@@ -427,10 +428,9 @@ MonoBehaviour:
   AmmoUsedOnStartCharge: 1
   AmmoUsageRateWhileCharging: 1
   WeaponAnimator: {fileID: 0}
-  MuzzleFlashPrefab: {fileID: 748781637555137343, guid: 4f5d4e5eaa0e5104791549cea3dc3f23,
-    type: 3}
+  MuzzleFlashPrefab: {fileID: 0}
   UnparentMuzzleFlash: 0
-  ShootSfx: {fileID: 8300000, guid: 53d2238f4c4b2aa4f8e559c7af9e0126, type: 3}
+  ShootSfx: {fileID: 8300000, guid: 5099307161c3c3748b9b14552a5d9c72, type: 3}
   ChangeWeaponSfx: {fileID: 0}
   UseContinuousShootSound: 0
   ContinuousShootStartSfx: {fileID: 0}
@@ -464,7 +464,8 @@ Transform:
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: -0.18739514, y: 0.039051395, z: -0.049531054}
   m_LocalScale: {x: 100, y: 100, z: 100}
-  m_Children: []
+  m_Children:
+  - {fileID: 9155926010770265250}
   m_Father: {fileID: 1571873486410228196}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -683,3 +684,78 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1001 &8040918844626300023
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1571873486410228198}
+    m_Modifications:
+    - target: {fileID: 1191051625046309077, guid: 0f1125a9f34f81743bcea642342afd49,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1191051625046309077, guid: 0f1125a9f34f81743bcea642342afd49,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1191051625046309077, guid: 0f1125a9f34f81743bcea642342afd49,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.124
+      objectReference: {fileID: 0}
+    - target: {fileID: 1191051625046309077, guid: 0f1125a9f34f81743bcea642342afd49,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.456
+      objectReference: {fileID: 0}
+    - target: {fileID: 1191051625046309077, guid: 0f1125a9f34f81743bcea642342afd49,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1191051625046309077, guid: 0f1125a9f34f81743bcea642342afd49,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1191051625046309077, guid: 0f1125a9f34f81743bcea642342afd49,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1191051625046309077, guid: 0f1125a9f34f81743bcea642342afd49,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1191051625046309077, guid: 0f1125a9f34f81743bcea642342afd49,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1191051625046309077, guid: 0f1125a9f34f81743bcea642342afd49,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1191051625046309077, guid: 0f1125a9f34f81743bcea642342afd49,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8972624860830089846, guid: 0f1125a9f34f81743bcea642342afd49,
+        type: 3}
+      propertyPath: m_Name
+      value: GunMuzzle (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0f1125a9f34f81743bcea642342afd49, type: 3}
+--- !u!4 &9155926010770265250 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1191051625046309077, guid: 0f1125a9f34f81743bcea642342afd49,
+    type: 3}
+  m_PrefabInstance: {fileID: 8040918844626300023}
+  m_PrefabAsset: {fileID: 0}

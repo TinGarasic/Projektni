@@ -13,8 +13,6 @@ GameObject:
   - component: {fileID: 106790115311484954}
   - component: {fileID: 5542020336735652036}
   - component: {fileID: 1203337828444365110}
-  - component: {fileID: 2223418409092269418}
-  - component: {fileID: 6841512634174719543}
   m_Layer: 0
   m_Name: Projectile_Disc
   m_TagString: Untagged
@@ -31,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 106790115311484953}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.418, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children:
   - {fileID: 843682582143931206}
   - {fileID: 4087059020014846873}
@@ -45,7 +43,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 106790115311484953}
-  m_Mesh: {fileID: 4300002, guid: ff6da3339a124244295a978acc07e2d6, type: 3}
+  m_Mesh: {fileID: 4300008, guid: ff6da3339a124244295a978acc07e2d6, type: 3}
 --- !u!23 &106790115311484954
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -65,7 +63,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: bbfadc30c17002448a215c8857fefa7a, type: 2}
+  - {fileID: 2100000, guid: 5b2b7260c3d595a45a622af3db645be8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -103,10 +101,10 @@ MonoBehaviour:
   Root: {fileID: 4087059020014846873}
   Tip: {fileID: 4087059020014846873}
   MaxLifeTime: 5
-  ImpactVfx: {fileID: 100000, guid: 7c0d4d6ccc753ef45ad79c580938a86c, type: 3}
+  ImpactVfx: {fileID: 0}
   ImpactVfxLifetime: 5
   ImpactVfxSpawnOffset: 0.1
-  ImpactSfxClip: {fileID: 8300000, guid: 53d2238f4c4b2aa4f8e559c7af9e0126, type: 3}
+  ImpactSfxClip: {fileID: 0}
   HittableLayers:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -115,7 +113,7 @@ MonoBehaviour:
   TrajectoryCorrectionDistance: -1
   InheritWeaponVelocity: 0
   Damage: 50
-  AreaOfDamage: {fileID: 1203337828444365110}
+  AreaOfDamage: {fileID: 0}
   RadiusColor: {r: 0.16470589, g: 0.16470589, b: 0.16470589, a: 0.49803922}
 --- !u!114 &1203337828444365110
 MonoBehaviour:
@@ -155,52 +153,6 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   AreaOfEffectColor: {r: 0.23584908, g: 0.09233714, b: 0.09233714, a: 0.5}
---- !u!114 &2223418409092269418
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 106790115311484953}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3614fdf64d310f44ba678e99290fa20a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Damage:
-    Min: 80
-    Max: 350
-  Radius:
-    Min: 0.2
-    Max: 0.2
-  Speed:
-    Min: 20
-    Max: 40
-  GravityDownAcceleration:
-    Min: 10
-    Max: 3
-  AreaOfEffectDistance:
-    Min: 5
-    Max: 5
---- !u!114 &6841512634174719543
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 106790115311484953}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da2b0de22b1558e4caa11aa3696e87fc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ChargingObject: {fileID: 4083654401643673495}
-  Scale:
-    Min: {x: 0.5, y: 0.5, z: 0.5}
-    Max: {x: 0.8, y: 0.8, z: 0.8}
-  Color:
-    Min: {r: 0, g: 2, b: 0.08890152, a: 1}
-    Max: {r: 0, g: 1.9999998, b: 0.32460728, a: 1}
 --- !u!1 &1945832826066038730
 GameObject:
   m_ObjectHideFlags: 0
@@ -396,12 +348,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 068381675912eb044a912de01e17f9cd, type: 3}
---- !u!1 &4083654401643673495 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1404200745246544, guid: 068381675912eb044a912de01e17f9cd,
-    type: 3}
-  m_PrefabInstance: {fileID: 4082780339065546951}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4087059020014846873 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4738416058690398, guid: 068381675912eb044a912de01e17f9cd,
