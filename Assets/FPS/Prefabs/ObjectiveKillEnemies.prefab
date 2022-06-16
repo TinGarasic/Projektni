@@ -9,8 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 598277302063295029}
-  - component: {fileID: 598277302063295019}
   - component: {fileID: 598277302063295030}
+  - component: {fileID: 376849853451199092}
+  - component: {fileID: 581326446311896104}
   m_Layer: 0
   m_Name: ObjectiveKillEnemies
   m_TagString: Untagged
@@ -32,25 +33,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &598277302063295019
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 598277302063295018}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a3cff9918d8018a44989bf444e3232f3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Title: Eliminate all the enemies
-  Description: Defeat all the enemies in the map
-  IsOptional: 0
-  DelayVisible: 4
-  MustKillAllEnemies: 1
-  KillsToCompleteObjective: 6
-  NotificationEnemiesRemainingThreshold: 1
 --- !u!114 &598277302063295030
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63,3 +45,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea4170175d245c6409bb0cb4cc7b2c5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &376849853451199092
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 598277302063295018}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &581326446311896104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 598277302063295018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37fff5bb19450134f9e207f3823811fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Title: Odi do drugog grada
+  Description: 
+  IsOptional: 0
+  DelayVisible: 0
+  DestroyRoot: {fileID: 0}
